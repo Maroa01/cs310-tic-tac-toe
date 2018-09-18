@@ -25,6 +25,9 @@ public class TicTacToeController {
 
     public void controlModel() {
         
+        System.out.println(" Play your next move:");
+        
+        
         /* Prompt player for next move using view's showNextMovePrompt() */
         
         view.showNextMovePrompt();

@@ -74,10 +74,15 @@ public class TicTacToeModel {
         /* Create grid (width x width) as a 2D Mark array */
 
         /* INSERT YOUR CODE HERE */
-
+        grid = new Mark[width][width];
+        
         /* Initialize grid by filling every square with empty marks */
-
-        /* INSERT YOUR CODE HERE */
+           for (int i=0; i<= 3; i++){
+            for (int j=0; j<=3; j++) {
+                grid[i][j]= Mark.EMPTY;
+            }
+            
+        }
         
     }
 	
@@ -88,6 +93,12 @@ public class TicTacToeModel {
            empty! */
         
         /* INSERT YOUR CODE HERE */
+        if ((row < width)&&(row >=0)){
+            if ((col< width) &&(col >= 0)){
+                return true;
+        }
+    }
+        
 
         return false; /* remove this line! */
         
